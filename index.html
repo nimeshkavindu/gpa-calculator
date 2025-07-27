@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPA Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-6">
+  <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-md">
+    <h1 class="text-2xl font-bold mb-4 text-center">GPA Calculator</h1>
+
+    <table class="w-full mb-4" id="subjectsTable">
+      <thead>
+        <tr class="bg-gray-200 text-left">
+          <th class="p-2">Subject</th>
+          <th class="p-2">Grade</th>
+          <th class="p-2">Credits</th>
+          <th class="p-2">Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows added here -->
+      </tbody>
+    </table>
+
+    <button onclick="addRow()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+      Add Subject
+    </button>
+
+    <div class="mt-6">
+      <button onclick="calculateGPA()" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+        Calculate GPA
+      </button>
+    </div>
+
+    <div class="mt-4 text-xl font-semibold" id="gpaResult"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
